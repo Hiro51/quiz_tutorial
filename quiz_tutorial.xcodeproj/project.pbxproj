@@ -406,6 +406,7 @@
 				450988971A18CF3800B85EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		450988981A18CF3800B85EF3 /* Build configuration list for PBXNativeTarget "quiz_tutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +415,7 @@
 				4509889A1A18CF3800B85EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,30 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wj-sr-2Cr">
-                    <rect key="frame" x="84" y="58" width="433" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wj-sr-2Cr">
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtV-aO-eZ8">
-                    <rect key="frame" x="84" y="80" width="433" height="30"/>
-                    <color key="backgroundColor" red="0.72387988295241867" green="0.97455594579106686" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Show Question">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="4di-So-Hub"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZK-Lx-sIx">
-                    <rect key="frame" x="84" y="489" width="433" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZK-Lx-sIx">
+                    <rect key="frame" x="40" y="499" width="520" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-J2-Rhn">
-                    <rect key="frame" x="84" y="511" width="433" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-J2-Rhn">
+                    <rect key="frame" x="40" y="520" width="520" height="30"/>
                     <color key="backgroundColor" red="0.72387988299999995" green="0.97455594580000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Show Answer">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,8 +37,32 @@
                         <action selector="showAnswer:" destination="-1" eventType="touchUpInside" id="sOK-HR-Hvi"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtV-aO-eZ8">
+                    <rect key="frame" x="40" y="100" width="520" height="30"/>
+                    <color key="backgroundColor" red="0.72387988295241867" green="0.97455594579106686" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Show Question">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showQuestion:" destination="-1" eventType="touchUpInside" id="4di-So-Hub"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8wj-sr-2Cr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="6Wl-d5-qyS"/>
+                <constraint firstItem="A4Q-J2-Rhn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="7bo-Up-BI1"/>
+                <constraint firstAttribute="trailing" secondItem="A4Q-J2-Rhn" secondAttribute="trailing" constant="40" id="FUe-Wd-IIp"/>
+                <constraint firstAttribute="trailing" secondItem="ZZK-Lx-sIx" secondAttribute="trailing" constant="40" id="VEH-pW-cGP"/>
+                <constraint firstItem="A4Q-J2-Rhn" firstAttribute="top" secondItem="ZZK-Lx-sIx" secondAttribute="bottom" id="XwX-Wi-7Fl"/>
+                <constraint firstItem="8wj-sr-2Cr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="YJm-U4-BW9"/>
+                <constraint firstItem="xtV-aO-eZ8" firstAttribute="top" secondItem="8wj-sr-2Cr" secondAttribute="bottom" id="giO-gi-AaE"/>
+                <constraint firstAttribute="bottom" secondItem="A4Q-J2-Rhn" secondAttribute="bottom" constant="50" id="hrr-e9-cVO"/>
+                <constraint firstItem="ZZK-Lx-sIx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="qBy-Yb-rLd"/>
+                <constraint firstAttribute="trailing" secondItem="8wj-sr-2Cr" secondAttribute="trailing" constant="40" id="qW0-2a-eY8"/>
+                <constraint firstItem="xtV-aO-eZ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="vhV-wb-8gg"/>
+                <constraint firstAttribute="trailing" secondItem="xtV-aO-eZ8" secondAttribute="trailing" constant="40" id="ykP-au-8ey"/>
+            </constraints>
         </view>
     </objects>
 </document>
